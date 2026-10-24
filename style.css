@@ -266,3 +266,92 @@ main {
     padding: 0 16px;
   }
 }
+/* NexoraMart: Compact Product Cards on Mobile */
+@media (max-width: 760px) {
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .product-card {
+    min-width: 0;
+    border-radius: 15px;
+  }
+
+  .product-image {
+    height: 145px;
+  }
+
+  .product-image .art {
+    font-size: 52px;
+  }
+
+  .product-image .badge {
+    top: 8px;
+    left: 8px;
+    padding: 6px 8px;
+    font-size: 8px;
+  }
+
+  .product-info {
+    padding: 12px;
+  }
+
+  .product-category {
+    font-size: 9px;
+    letter-spacing: 0.7px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+  }
+
+  .product-info h3 {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 7px 0;
+    overflow-wrap: anywhere;
+  }
+
+  .product-desc {
+    font-size: 11px;
+    line-height: 1.5;
+    min-height: 0;
+    margin-bottom: 12px;
+  }
+
+  .product-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 12px;
+  }
+
+  .price {
+    font-size: 17px;
+  }
+
+  .add-button {
+    width: 100%;
+    padding: 10px 6px;
+    font-size: 11px;
+  }
+}
+
+/* Very small mobile screens */
+@media (max-width: 360px) {
+  .product-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .product-image {
+    height: 180px;
+  }
+
+  .product-bottom {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .add-button {
+    width: auto;
+  }
+}
