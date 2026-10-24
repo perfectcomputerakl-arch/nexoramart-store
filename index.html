@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover useful everyday finds at NexoraMart. Smart Shopping. Better Living.">
+  <title>NexoraMart | Smart Shopping. Better Living.</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">Welcome to NexoraMart · Smart Shopping. Better Living.</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="NexoraMart home">
+      <img src="assets/logo.svg" alt="" width="42" height="42">
+      <span>Nexora<span class="brand-accent">Mart</span><small>SMART SHOPPING. BETTER LIVING.</small></span>
+    </a>
+    <form class="search" id="searchForm" role="search">
+      <input id="searchInput" type="search" placeholder="Search products..." aria-label="Search products">
+      <button type="submit" aria-label="Search">⌕</button>
+    </form>
+    <button class="cart-button" id="openCart" aria-label="Open shopping cart">Cart <span id="cartCount">0</span></button>
+  </header>
+
+  <nav class="category-nav" aria-label="Product categories">
+    <button class="nav-chip active" data-category="All">All products</button>
+    <button class="nav-chip" data-category="Home">Home & Living</button>
+    <button class="nav-chip" data-category="Tech">Tech accessories</button>
+    <button class="nav-chip" data-category="Lifestyle">Lifestyle</button>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">THE EVERYDAY UPGRADE</p>
+        <h1>Good finds.<br><span>Better everyday.</span></h1>
+        <p>Thoughtful picks for your home, tech setup and everyday life. Discover something useful today.</p>
+        <a class="primary-button" href="#products">Explore products <span>→</span></a>
+        <div class="trust-row"><span>✓ Curated finds</span><span>✓ Easy browsing</span><span>✓ USA-focused concept</span></div>
+      </div>
+      <div class="hero-art" aria-label="Decorative shopping illustration">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="shopping-bag"><div class="bag-handle"></div><div class="bag-mark">N</div></div>
+        <div class="floating-card card-top">YOUR NEXT<br><b>GOOD FIND</b> ✦</div>
+        <div class="floating-card card-bottom">Everyday essentials<br><b>Made simple.</b></div>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Store benefits">
+      <div><span class="benefit-icon">✦</span><span><b>Handpicked style</b><small>Useful everyday finds</small></span></div>
+      <div><span class="benefit-icon">◎</span><span><b>Simple shopping</b><small>Browse with ease</small></span></div>
+      <div><span class="benefit-icon">↗</span><span><b>Discover more</b><small>New ideas, one place</small></span></div>
+    </section>
+
+    <section class="products-section" id="products">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE NEXORA EDIT</p><h2>Popular picks</h2><p class="muted">Sample products for your store design. Verify supplier stock, costs and shipping before selling.</p></div>
+        <span class="results-label" id="resultsLabel">6 products</span>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty-state" id="emptyState" hidden>No products match your search. Try another term.</div>
+    </section>
+
+    <section class="newsletter">
+      <div><p class="eyebrow">STAY IN THE LOOP</p><h2>Good finds, straight to you.</h2><p>Join our updates list for new product discoveries.</p></div>
+      <form id="newsletterForm"><label class="sr-only" for="newsletterEmail">Email address</label><input type="email" id="newsletterEmail" placeholder="Your email address" required><button class="primary-button" type="submit">Join list</button></form>
+      <small class="newsletter-note">Demo form only — it does not store or send email addresses.</small>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#"><img src="assets/logo.svg" alt="" width="36" height="36"><span>Nexora<span class="brand-accent">Mart</span><small>SMART SHOPPING. BETTER LIVING.</small></span></a>
+    <p>© <span id="year"></span> NexoraMart. All rights reserved.</p>
+    <div><a href="#policies">Store information</a><a href="mailto:hello@example.com">Contact</a></div>
+  </footer>
+  <section class="policy-note" id="policies"><b>Store setup note:</b> This is a starter storefront. Product images, prices, shipping times, returns, contact details, privacy terms and checkout must be verified and configured before launch.</section>
+
+  <div class="cart-overlay" id="cartOverlay" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="drawer-head"><div><p class="eyebrow">YOUR BAG</p><h2>Shopping cart</h2></div><button class="icon-button" id="closeCart" aria-label="Close cart">×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer"><div class="subtotal"><span>Subtotal</span><strong id="cartSubtotal">$0.00</strong></div><p>Shipping and taxes are calculated after a real checkout integration is configured.</p><button id="checkoutButton" class="primary-button full-width">Continue to checkout</button><small>Demo only — no payment is collected on this site.</small></div>
+  </aside>
+
+  <dialog id="checkoutDialog" class="checkout-dialog">
+    <form method="dialog" class="dialog-close-row"><button class="icon-button" aria-label="Close checkout">×</button></form>
+    <p class="eyebrow">NEXT STEP</p><h2>Checkout setup needed</h2>
+    <p>This starter website can display products and maintain a demo cart, but it does not process payments or send orders to CJdropshipping yet.</p>
+    <ol><li>Confirm the products and USA warehouse stock in CJdropshipping.</li><li>Set up a supported ecommerce checkout and payment provider.</li><li>Connect CJdropshipping and test a complete order before launch.</li></ol>
+    <button class="primary-button full-width" id="understandButton">Got it</button>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
