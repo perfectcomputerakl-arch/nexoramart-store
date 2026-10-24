@@ -1,18 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg"
-     xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="512"
-     height="512"
-     viewBox="0 0 512 512">
-
-  <title>NexoraMart Logo</title>
-
-  <image
-    x="0"
-    y="0"
-    width="512"
-    height="512"
-    preserveAspectRatio="xMidYMid meet"
-    xlink:href="NexoraMart_Logo_512x512.png"/>
-
-</svg>
+{
+  "brand": "NexoraMart",
+  "logo": {
+    "name": "NexoraMart Official Logo",
+    "format": "PNG",
+    "width": 1280,
+    "height": 1280,
+    "background": "#000000",
+    "design": {
+      "symbol": "NM letters with a blue and cyan swoosh",
+      "shopping_cart": "Blue shopping cart integrated into the symbol",
+      "brand_text": "NexoraMart",
+      "tagline": "SMART SHOPPING. BETTER LIVING."
+    },
+    "colors": {
+      "primary_blue": "#0057FF",
+      "dark_blue": "#003399",
+      "cyan": "#00CFFF",
+      "white": "#FFFFFF",
+      "background": "#000000"
+    },
+    "style": [
+      "Modern",
+      "Premium",
+      "Technology",
+      "E-commerce",
+      "Gradient",
+      "Professional"
+    ]
+  }
+}
