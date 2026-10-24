@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     width="512"
-     height="512"
-     viewBox="0 0 512 512"
-     role="img"
-     aria-labelledby="title desc">
+     width="1200"
+     height="600"
+     viewBox="0 0 1200 600">
 
-  <title id="title">NexoraMart</title>
-  <desc id="desc">NexoraMart — Smart Shopping. Better Living.</desc>
+  <title>NexoraMart Logo</title>
 
   <image
     href="./logo.png"
     x="0"
     y="0"
-    width="512"
-    height="512"
+    width="1200"
+    height="600"
     preserveAspectRatio="xMidYMid meet"/>
+
 </svg>
