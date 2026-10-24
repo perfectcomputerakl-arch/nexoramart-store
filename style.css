@@ -19,3 +19,30 @@
   object-position: left center;
   border-radius: 12px;
 }
+/* NexoraMart Logo Fix */
+.site-header .brand {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 0;
+}
+
+.site-header .brand .logo {
+  display: block;
+  width: 180px;
+  height: 90px;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 14px;
+}
+
+/* Mobile Logo */
+@media (max-width: 760px) {
+  .site-header .brand .logo {
+    width: 150px;
+    height: 75px;
+    object-fit: contain;
+    border-radius: 12px;
+  }
+}
