@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
      width="1200"
      height="600"
      viewBox="0 0 1200 600">
@@ -7,11 +8,10 @@
   <title>NexoraMart Logo</title>
 
   <image
-    href="./logo.png"
     x="0"
     y="0"
     width="1200"
     height="600"
-    preserveAspectRatio="xMidYMid meet"/>
-
+    preserveAspectRatio="xMidYMid meet"
+    xlink:href="./logo.png"/>
 </svg>
