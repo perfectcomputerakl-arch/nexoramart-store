@@ -1,31 +1,7 @@
-{
-  "brand": "NexoraMart",
-  "logo": {
-    "name": "NexoraMart Official Logo",
-    "format": "PNG",
-    "width": 1280,
-    "height": 1280,
-    "background": "#000000",
-    "design": {
-      "symbol": "NM letters with a blue and cyan swoosh",
-      "shopping_cart": "Blue shopping cart integrated into the symbol",
-      "brand_text": "NexoraMart",
-      "tagline": "SMART SHOPPING. BETTER LIVING."
-    },
-    "colors": {
-      "primary_blue": "#0057FF",
-      "dark_blue": "#003399",
-      "cyan": "#00CFFF",
-      "white": "#FFFFFF",
-      "background": "#000000"
-    },
-    "style": [
-      "Modern",
-      "Premium",
-      "Technology",
-      "E-commerce",
-      "Gradient",
-      "Professional"
-    ]
-  }
-}
+<img
+  src="assets/logo.png"
+  alt="NexoraMart - Smart Shopping. Better Living."
+  width="250"
+  height="250"
+  style="object-fit: contain;"
+>
