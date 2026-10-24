@@ -355,3 +355,67 @@ main {
     width: auto;
   }
 }
+/* FINAL FIX: Mobile Product Cards */
+@media screen and (max-width: 760px) {
+  main .products-section .product-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+    align-items: stretch;
+  }
+
+  main .products-section .product-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  main .products-section .product-image {
+    height: 140px !important;
+    min-height: 0 !important;
+  }
+
+  main .products-section .product-info {
+    padding: 12px !important;
+  }
+
+  main .products-section .product-category {
+    font-size: 9px !important;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+    overflow-wrap: anywhere;
+  }
+
+  main .products-section .product-info h3 {
+    font-size: 14px !important;
+    line-height: 1.35;
+    margin: 7px 0 !important;
+    overflow-wrap: anywhere;
+  }
+
+  main .products-section .product-desc {
+    font-size: 11px !important;
+    line-height: 1.45;
+    min-height: 0 !important;
+    margin-bottom: 12px;
+  }
+
+  main .products-section .product-bottom {
+    display: flex;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px;
+    margin-top: 12px !important;
+  }
+
+  main .products-section .price {
+    font-size: 17px !important;
+  }
+
+  main .products-section .add-button {
+    width: 100% !important;
+    padding: 10px 4px !important;
+    font-size: 11px !important;
+  }
+}
