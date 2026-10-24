@@ -1,7 +1,106 @@
-<img
-  src="assets/logo.png"
-  alt="NexoraMart - Smart Shopping. Better Living."
-  width="250"
-  height="250"
-  style="object-fit: contain;"
->
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1280"
+     height="1280"
+     viewBox="0 0 1280 1280">
+
+  <defs>
+    <linearGradient id="blueGradient"
+                    x1="0%" y1="100%"
+                    x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#003399"/>
+      <stop offset="45%" stop-color="#0057FF"/>
+      <stop offset="100%" stop-color="#00CFFF"/>
+    </linearGradient>
+
+    <linearGradient id="textGradient"
+                    x1="0%" y1="0%"
+                    x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#003399"/>
+      <stop offset="48%" stop-color="#0057FF"/>
+      <stop offset="100%" stop-color="#00CFFF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="1280" fill="#000000"/>
+
+  <!-- NM Symbol -->
+  <g fill="url(#blueGradient)">
+
+    <!-- N -->
+    <path d="M380 600
+             L380 410
+             Q380 370 420 370
+             Q450 370 475 400
+             L650 590
+             L650 445
+             Q650 410 685 410
+             L725 410
+             L725 600
+             L665 640
+             L465 435
+             L465 600 Z"/>
+
+    <!-- M -->
+    <path d="M710 430
+             Q710 405 735 405
+             L785 405
+             L850 475
+             L915 405
+             L955 405
+             Q975 405 975 430
+             L975 535
+             L900 565
+             L900 475
+             L850 535
+             Q840 550 830 535
+             L780 475
+             L780 570
+             L710 600 Z"/>
+
+  </g>
+
+  <!-- Swoosh -->
+  <path d="M365 520
+           C285 575 275 625 365 650
+           C545 700 790 585 980 475
+           C1045 435 1030 400 970 390
+           C1090 405 1095 460 1015 510
+           C790 645 520 715 340 675
+           C240 650 245 580 365 520 Z"
+        fill="url(#blueGradient)"/>
+
+  <!-- Shopping Cart -->
+  <g fill="url(#blueGradient)">
+    <path d="M900 585
+             L1025 555
+             L995 615
+             L925 615 Z"/>
+
+    <rect x="865" y="600" width="80" height="12" rx="6"/>
+    <rect x="885" y="620" width="80" height="12" rx="6"/>
+    <rect x="905" y="640" width="80" height="12" rx="6"/>
+
+    <circle cx="920" cy="665" r="13"/>
+    <circle cx="975" cy="665" r="13"/>
+  </g>
+
+  <!-- Brand Name -->
+  <text x="640" y="835"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="142"
+        font-weight="900"
+        letter-spacing="-5"
+        fill="url(#textGradient)">NexoraMart</text>
+
+  <!-- Tagline -->
+  <text x="640" y="895"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="31"
+        font-weight="600"
+        letter-spacing="8"
+        fill="#A8BCE8">SMART SHOPPING. BETTER LIVING.</text>
+
+</svg>
